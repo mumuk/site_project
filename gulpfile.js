@@ -49,7 +49,7 @@ gulp.task('scripts', function () {
 
 //---------------------------------------//
 
-gulp.task('browserSync', function () { // Создаем таск browser-sync
+gulp.task('browser-sync', function () { // Создаем таск browser-sync
     browserSync({ // Выполняем browserSync
         server: { // Определяем параметры сервера
             baseDir: 'app' // Директория для сервера - app
@@ -84,7 +84,7 @@ gulp.task('clear', function () { // Очищаем cache, если нужно
 
 //---------------------------------------//
 
-gulp.task('watch', ['browserSync', 'css-libs', 'scripts'], function () {
+gulp.task('watch', ['browser-sync', 'sass', 'scripts'], function () {
     gulp.watch('app/sass/**/*.sass', ['sass']); // Наблюдение за sass файлами в папке sass
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);

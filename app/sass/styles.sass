@@ -3,9 +3,217 @@
 @import "base"
 @import "vars"
 
+.wrapper
+  width: 100%
+  max-width: 1200px
+  margin: 0 auto
+
+.logo-image
+  height: 7em
+
+.cart-thubn
+  height: 4em
+
+
+@media (min-width: 550px)
+
+  .wrapper
+    display: grid
+    grid-template-columns: #{"repeat(12, [col] 1fr )"}
+    grid-template-rows: #{"repeat(6, [row] auto)"}
+
+
+  .socials
+    padding-left: 5px
+    grid-column: col / span 10
+    grid-row: row
+    display: flex
+    background-color: $brownDark
+    color: white
+    justify-content: flex-start
+
+  .socials-img
+    display: block
+    height: 2em
+    margin: 0 5px
+    align-self: flex-end
+    margin: 0.3em
+
+
+  .login
+    grid-column: col 11 / span 2
+    grid-row: row
+    display: inline-flex
+    background-color: #333333
+
+    a
+      color: white
+      align-self: center
+      font-size: 1.3em
+
+  .logo-image-div
+    grid-column: col  / span 4
+    grid-row: row 2
+    display: inline-flex
+
+  .panel
+    grid-column: col 6 / span 6
+    grid-row: row 2
+    display: inline-flex
+
+  .cartDiv
+    grid-column: col 12 / span 1
+    grid-row: row 2
+    display: inline-grid
+    align-content: center
+
+  //.panel
+  //  grid-column: col / span 12
+  //  grid-row: row 2
+  //  display: inline-flex
+  //  align-self: center
+  //  margin: 0
+  //  padding: 0
+  //  list-style-type: none
+
+  .mainheader
+    width: inherit
+    grid-column: col / span 12
+    grid-row: row 3
+    display: flex
+    align-content: center
+    flex-flow: column
+    padding-left: 3em
+    justify-content: center
+    font-size: 25px
+    min-height: 60vh
+    background-size: cover
+    background-position: center
+    position: relative
+
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background-color: $dark
+      opacity: .70
+
+  .header-content
+    z-index: 1
+    color: #ffffff
+    text-align: left
+    padding: 60px $gutter
+    h1
+      font-size: 60px
+      font-family: intro-grid, sans-serif
+      font-weight: normal
+      margin: 20px 0px
+      line-height: 1.5
+
+
+  .content
+    margin: 1em 0
+    grid-column: col / span 12
+    grid-row: row 4
+    display: grid
+    grid-template-columns: repeat(3, 4fr )
+    grid-template-rows: repeat(2, 480px)
+    grid-column-gap: 2em
+    grid-row-gap: 15px
+    padding-top: 20px
+    padding-bottom: 20px
+    border-bottom: #EDEDED thin solid
+    border-top: #EDEDED thin solid
+
+  .menu-item
+    wigth: 30%
+    background-color: white
+    border: #d4d4d4 dotted thin
+    text-align: center
+    justify-content: center
+
+  .item-img
+    width: 100%
+  .slider-div
+      overflow: hidden
+      display: flex
+      height: 9em
+      width: 100%
+      border-bottom: #EDEDED thin solid
+      border-top: #EDEDED thin solid
+      grid-column: col / span 12
+      grid-row: row 5
+  .sld-window
+    width: 90%
+    height: 20em
+    position:  relative
+
+
+  .sld-btns
+    width: 10%
+    background: no-repeat
+    background-position: center
+    background-color: #d4d4d4
+    .sld-btns:hover
+      background-color: darken($light,10%)
+  .left-btn
+
+
+  .right-btn
+
+
+  .mainfooter
+    margin-top: 15px
+    grid-column: col / span 12
+    grid-row: row 6
+    background-color: $brownDark
+    display: grid
+    grid-template-columns: repeat(2, 1fr )
+    color: #EDEDED
+
+  .contacts
+    text-align: center
+
+
+  .subscribe
+    display: flex
+    align-items: center
+    text-align: center
+    flex-flow: column
+
+
+#subscr-field
+  background-color: lighten($brownDark, 10%)
+  border-color: grey
+
+
+#navbar
+  display: -webkit-flex
+  display: flex
+  margin: auto
 
 
 
+#navbar li
+  display: inline-flex
+  height: 85.99px
+  padding: 0
+  margin: auto
+  justify-content: flex-start
+  align-items: center
+  margin: 0 10px
+#navbar a
+  color: #293A43
+  padding: 1.5em 0
+  text-decoration: none
+  font-weight: bold
+  text-align: center
+  font-size: 20px
+  width: 100px
 
-@import "media"
-// Всегда в конце
+
+#navbar a:hover
+  background-color: darken($light,10%)
