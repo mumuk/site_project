@@ -12,7 +12,7 @@ let gulp = require('gulp'), // Подключаем Gulp
     cache = require('gulp-cache'), // Подключаем библиотеку кеширования
     autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
 notify = require("gulp-notify");
-    let babel = require('gulp-babel');
+let babel = require('gulp-babel');
 
 //---------------------------------------//
 
@@ -40,7 +40,10 @@ gulp.task('css-libs', ['sass'], function () {
 gulp.task('scripts', function () {
     return gulp.src([ // Берем все необходимые библиотеки
         'node_modules/jquery/dist/jquery.min.js', // Берем jQuery
-        'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js' // Берем Magnific Popup
+        'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js', // Берем Magnific Popup
+        'node_modules/bootstrap/dist/js/bootstrap.min.js',
+        'node_modules/tether/dist/js/tether.js'
+
     ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
         .pipe(uglify()) // Сжимаем JS файл
@@ -105,16 +108,28 @@ gulp.task('babel', ['scripts'], function () {
 gulp.task('build', ['clean', 'sass', 'scripts', 'img'], function () {
 
     let buildCss = gulp.src([ // Переносим библиотеки в продакшен
-        'app/css/styles.min.css',
+        'app/css/*.css',
     ])
         .pipe(gulp.dest('dist/css'));
 
     let buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
         .pipe(gulp.dest('dist/fonts'));
 
-    let buildJs = gulp.src('app/js/**/*') // Переносим скрипты в продакшен
+    let buildJs = gulp.src('app/js/*.js') // Переносим скрипты в продакшен
         .pipe(babel({presets: ['env']}))
         .pipe(uglify())
+        .pipe(gulp.dest('dist/js'));
+    let buildJs2 = gulp.src('app/js/libs.min.js') // Переносим скрипты в продакшен
+        .pipe(babel({presets: ['env']}))
+        // .pipe(uglify())
+        .pipe(gulp.dest('dist/js'));
+    let buildJs3 = gulp.src('app/js/jquery.min.js') // Переносим скрипты в продакшен
+        .pipe(babel({presets: ['env']}))
+        // .pipe(uglify())
+        .pipe(gulp.dest('dist/js'));
+    let buildJs4 = gulp.src('app/js/tether.min.js') // Переносим скрипты в продакшен
+        .pipe(babel({presets: ['env']}))
+        // .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
 
     let buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен

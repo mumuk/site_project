@@ -178,6 +178,8 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     cursor: pointer; }
+    .menu-item h3 {
+      font-size: 1.4em; }
   .menu-item:hover {
     background-color: #e6e6e6; }
     .menu-item:hover h3 {
@@ -254,3 +256,6 @@ body {
   background-color: #d4d4d4;
   color: red;
   font-weight: bold; }
+
+#listBlockId {
+  font-size: 5px; }

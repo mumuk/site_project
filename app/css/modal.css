@@ -1,0 +1,30 @@
+.modal-content {
+    font-size: 13px;
+}
+
+.myRow {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0%;
+    font-size: 12px;
+}
+
+.badge-default {
+    min-width: 27px;
+}
+
+#rowOfPlansh {
+    position: relative;
+}
+
+#rowOfPlansh #firstForm {
+    position: absolute;bottom:10px;
+}
+
+#addMaket {
+    display: none;
+}
+
+#myRow {
+    font-size: 10px;
+}

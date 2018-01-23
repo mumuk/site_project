@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
     <title>Title</title>
@@ -18,7 +20,8 @@
     <div class="login"><a href="" title="Регистрация">Вход / Регистрация</a></div>
 
 
-    <div class="logo-image-div"><a href="" title="На главную"><img class="side-image logo-image" src="img/tbnls/logo.jpg" alt="На главную"></a></div>
+    <div class="logo-image-div"><a href="" title="На главную"><img class="side-image logo-image"
+                                                                   src="img/tbnls/logo.jpg" alt="На главную"></a></div>
 
     <div class="panel">
         <ul id="navbar">
@@ -57,13 +60,13 @@
             <img class="item-img" src="img/012.jpg" alt="">
             <p>Размещение рекламного банера за водителем маршрутного такси</p>
         </div>
-        <div class="menu-item menu-item4">
+        <div class="menu-item menu-item4" data-toggle="modal" data-target="#posterModal">
             <h3>Рекламные планшеты в автобусах</h3>
             <img class="item-img" src="img/016.jpg" alt="">
             <p>Размещение рекламы в специальных антивандальных рамках в центре автобуса</p>
         </div>
         <div class="menu-item menu-item5">
-            <h3>Реклама стикеры на стекла транспорта</h3>
+            <h3>Стикеры на стекла транспорта</h3>
             <img class="item-img" src="img/018.jpg" alt="">
             <p>Рекламные наклейки формата А-4 и А-3 на стеклах и дверях автобусов</p>
         </div>
@@ -73,7 +76,7 @@
             <p>Размещение рекламы в лифтах высотных домов и парадных элитных домов</p>
         </div>
         <div class="menu-item menu-item7">
-            <h3>Реклама на козырьке лобового стекла</h3>
+            <h3>На козырьке лобового стекла</h3>
             <img class="item-img" src="img/021.jpg" alt="">
             <p>Брендирование лобового стекла автобуса.</p>
         </div>
@@ -129,7 +132,258 @@ e-mail: 7870794@gmail.com
     </footer>
 </div>
 
+
+<div class="modal fade bd-example-modal-lg" id="posterModal" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLongTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Услуга размещения постеров в планшетах</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div>
+                        <ul class="nav nav-tabs" id="myTab">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#home" aria-controls="home" role="tab"
+                                   data-toggle="tab">ОПИСАНИЕ УСЛУГИ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#profile" aria-controls="profile" role="tab"
+                                   data-toggle="tab">СФОРМИРОВАТЬ ЗАКАЗ</a>
+                            </li>
+                            <li class="nav-item" id="messages" style="display: none">
+                                <a class="nav-link" href="#maket" aria-controls="maket" role="tab"
+                                   data-toggle="tab">ПРИКРЕПИТЬ МАКЕТ</a>
+                            </li>
+                        </ul>
+
+                        <!-- Содержимое вкладок -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-4 col-sm-12">
+                                        <img src="img/planshetModal/pl01.jpg" class="img-thumbnail">
+                                        <p>
+                                            Рекламные планшеты – это следующая ступень эволюции рекламных объявлений,
+                                            которая взяла все самое лучшее от предшественников, и исправила их
+                                            недостатки.
+                                            В каждый планшет вы можете разместить рекламу размером от одного до четырех
+                                            листов формата А4 альбомной ориентации.
+                                        </p>
+                                    </div>
+
+                                    <div class="col-lg" class="modal-content">
+                                        Транспорт в котором размещаются планшеты - маршуртное такси</br>
+                                        <b>Формат рекламного объявления</b> - А4 горизонтальной (297 х 210мм)</br>
+                                        Минимальный срок рекламной компании - 2 недели</br>
+                                        Минимальный заказ - 10 шт</br>
+                                        Минимальный заказ на маршрут - 5 шт</br>
+                                        Стоимость размещения одного постера</br>
+                                        ​А4 - 55 грн/мес.</br>
+                                        А4 - 40 грн./2 недели</br>
+                                        2 А4 - 120грн./мес.</br>
+                                        печать постера включена в стоимость.</br>
+                                        Мониторинг с довешиванием поврежденных - не требуется</br>
+                                        Жесткая привязка автобуса к маршруту - 24-28 дней/мес. практически везде, кроме
+                                        редких исключений</br>
+                                        Фотоотчет общим количеством:</br>
+                                        до 50-ти автобусов - 100%,</br>
+                                        50-100 автобусов 80%,</br>
+                                        Более 100 автобусов 70%</br>
+                                        Дополнительно фотоотчет делается только при замене сюжета рекламы.
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile">
+
+                                <div class="row">
+
+                                    <div class="col-4">
+                                        <img src="img/planshetModal/pl002.jpg" class="img-thumbonail">
+                                        <form id="formatOfPoster">
+                                            <p> Выберите формат:
+
+                                                <select name="format1">
+
+                                                    <option value="А4">А4</option>
+                                                    <option value="2А4">2А4</option>
+                                                </select></p>
+                                        </form>
+
+                                    </div>
+                                    <div class="col-4">
+                                        <div><b>Формирование заказа на следующую дату размещения:</b></br></div>
+
+                                        <form id="paramOfPoster">
+                                            <div id="DateOfZ"></div>
+                                            </br>
+                                            <div id="DateOptions">
+                                                <p>Старт размещения
+                                                    <select name="date">
+                                                        <option value="0">с даты</option>
+                                                        <option value="23.01">23.01.2018</option>
+                                                        <option value="30.01">30.01.2018</option>
+                                                        <option value="06.02">06.02.2018</option>
+                                                        <option value="13.02">13.02.2018</option>
+                                                    </select>
+                                                <div class="formCheck" id="formCheckDate"></div>
+                                                </p></div>
+
+                                            <p> Выберите
+                                                <select name="route" onChange="MkPosterValues(this.selectedIndex)">
+                                                    <option value="0">маршрут</option>
+                                                    <option value="146">146</option>
+                                                    <option value="121">121</option>
+                                                    <option value="175">175</option>
+                                                    <option value="185">185</option>
+                                                    <option value="232">232</option>
+                                                </select>
+                                            <div class="formCheck" id="formCheckRoute"></div>
+                                            </p>
+                                            <p>Выберите
+                                                <select name="term">
+                                                    <option value="0">срок</option>
+                                                    <option value="2 нед.">2 нед.</option>
+                                                    <option value="1 м.">1 мес.</option>
+                                                    <option value="2 м.">2 мес.</option>
+                                                    <option value="3 м.">3 мес.</option>
+                                                </select></p>
+                                            <div class="formCheck" id="formCheckTerm"></div>
+                                            <p>Выберите
+                                                <select name="amount">
+                                                    <option value="0">кол-во</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select></p>
+                                            <div class="formCheck" id="formCheckAmount"></div>
+
+
+                                            <input type="button" id="addToTempListBut" name="addbutton"
+                                                   value="Добавить в список">
+                                        </form>
+
+                                    </div>
+
+                                    <div class="col-4">
+                                        Формирование заказа:
+                                        <div id="tempList">
+
+                                        </div>
+                                        <hr>
+                                        <div id="summaryList"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="maket"><h6>Каким должен быть макет для размещения
+                                в планшетах:</h6>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div id="maketPosterInfo" style="display: none">
+                                                <p>
+                                                    Макет должен быть горизонтального расположения.</br>
+                                                    Размер 297х210 мм или 590х210 мм, если вы размещаете 2хА4
+                                                    макет.</br>
+                                                    Цветовая модель CMYK. Формат JPG или TIFF.</br>
+                                                    Разрешение не менее 200 dpi.</br>
+                                                    <b>Вы хотите:</b></br> </p>
+                                                <form id="maketPosterForm">
+                                                    <p><input type="radio" name="maketPoster" value="load"/> загрузить
+                                                        макет?</p>
+                                                    <p><input type="radio" name="maketPoster" value="share"/> указать
+                                                        ссылку на файлообменник?</p>
+                                                    <p><input type="radio" name="maketPoster" value="create"/> заказать
+                                                        изготовление макета?</p>
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                        <div class="col"><p><b>Как нам получить ваш макет?</b></p>
+                                            <div id="maketAttach">
+
+                                                <div id="fileLoader" style="display: none">
+                                                    <p>Форма загрузки файлов на сервер</p>
+                                                    <form id="uploader">
+                                                        <input type="text">
+                                                        <input type="button" value="Browse"></form>
+                                                    <br></br><input type="checkbox" name="design" value="des" id="dcheck"/> Принять заказ. Я пришлю вам свой макет позже.</p>
+                                                </div>
+                                                <div id="posterLink" style="display: none">
+                                                    <p>Скопируйте ссылку на файлообменник</p>
+                                                    <div id="linkFromPosterLinkFormToDiv"></div>
+                                                    <div id="linkFromPosterLinkFormToDivControl"></div>
+                                                    <form id="posterLinkForm">
+                                                        <p><input type="text" id="inputForLinkPoster"
+                                                                  style="width: 250px;">
+                                                            <input type="button" value="add"
+                                                                   name="addLinkToPosterMaket"></p>
+                                                        <p><input type="textarea" value="Напишите комментарий"
+                                                                  id="comentInUploadForm"
+                                                                  style="width: 250px; height: 100px"></p>
+                                                        <p><input type="checkbox" name="design2" value="des"/> Принять заказ. Я пришлю вам свой макет позже.</p>
+
+                                                    </form>
+                                                </div>
+                                                <div id="maketCreationLink" style="display: none">
+                                                    <p>Если вы хотите заказть услугу изготовления макета, пожалуйста,
+                                                        свяжитесь с нашим дизайнером:</p>
+                                                    <p>тел.: (048) 787-07-94</br>
+                                                        e-mail: vsischenko@gmail.com</p>
+                                                    <p>Стоимость услуги по изготовлению постера - от 100 грн.</p>
+                                                    <form id="designChekbox">
+                                                        <p><input type="checkbox" name="design" value="des"/> Я свяжусь
+                                                            с вашим дизайнером, примите заказ </p>
+                                                    </form>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="cancelForm">Close</button>
+                    <div id="footerButton"></div>
+                    <button type="button" class="btn btn-primary" id="addMaket">Далее</button>
+                    <button type="button" class="btn btn-primary" id="addToCart" style="display: none">Добавить в корзину</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
 <script src="js/libs.min.js"></script>
+<!--<script src="../node_modules/popper.js/dist/popper.js"></script>-->
+<!--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>-->
+<!--<script src="https://code.jquery.com/jquery-3.2.1.min.js"-->
+        <!--integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>-->
+<!--<script src="node_modules/tether/dist/js/tether.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"-->
+        <!--integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"-->
+        <!--crossorigin="anonymous"></script>-->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"-->
+        <!--integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"-->
+        <!--crossorigin="anonymous"></script>pt>-->
 <script src="js/app.js"></script>
 </body>
 </html>
