@@ -66,19 +66,27 @@ body {
             align-self: flex-end;
     margin: 0.3em; }
   .login {
-    grid-column: col 11 / span 2;
+    grid-column: col 10 / span 3;
     grid-row: row;
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    background-color: #333333; }
+    background-color: #333333;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
     .login a {
       color: white;
       -webkit-align-self: center;
           -ms-flex-item-align: center;
               align-self: center;
-      font-size: 1.3em; }
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-right: 1em; }
+    .login a:hover {
+      color: gainsboro; }
   .logo-image-div {
     grid-column: col  / span 4;
     grid-row: row 2;
@@ -126,7 +134,8 @@ body {
     -webkit-background-size: cover;
             background-size: cover;
     background-position: center;
-    position: relative; }
+    position: relative;
+    margin-bottom: 1em; }
     .mainheader::before {
       content: '';
       position: absolute;
@@ -163,37 +172,18 @@ body {
   .menu-item {
     wigth: 30%;
     background-color: white;
-    border: #d4d4d4 dotted thin;
     text-align: center;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    cursor: pointer; }
+  .menu-item:hover {
+    background-color: #e6e6e6; }
+    .menu-item:hover h3 {
+      color: red; }
   .item-img {
     width: 100%; }
-  .slider-div {
-    overflow: hidden;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    height: 9em;
-    width: 100%;
-    border-bottom: #EDEDED thin solid;
-    border-top: #EDEDED thin solid;
-    grid-column: col / span 12;
-    grid-row: row 5; }
-  .sld-window {
-    width: 90%;
-    height: 20em;
-    position: relative; }
-  .sld-btns {
-    width: 10%;
-    background: no-repeat;
-    background-position: center;
-    background-color: #d4d4d4; }
-    .sld-btns .sld-btns:hover {
-      background-color: #d4d4d4; }
   .mainfooter {
     margin-top: 15px;
     grid-column: col / span 12;
@@ -201,7 +191,8 @@ body {
     background-color: #333333;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    color: #EDEDED; }
+    color: #EDEDED;
+    margin-bottom: 10em; }
   .contacts {
     text-align: center; }
   .subscribe {
@@ -222,7 +213,8 @@ body {
 
 #subscr-field {
   background-color: #4d4d4d;
-  border-color: grey; }
+  border-color: grey;
+  color: white; }
 
 #navbar {
   display: -webkit-flex;
@@ -259,4 +251,6 @@ body {
   width: 100px; }
 
 #navbar a:hover {
-  background-color: #d4d4d4; }
+  background-color: #d4d4d4;
+  color: red;
+  font-weight: bold; }

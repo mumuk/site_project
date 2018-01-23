@@ -41,15 +41,23 @@
 
 
   .login
-    grid-column: col 11 / span 2
+    grid-column: col 10 / span 3
     grid-row: row
     display: inline-flex
     background-color: #333333
+    justify-content: flex-end
+
 
     a
       color: white
       align-self: center
       font-size: 1.3em
+      font-weight: bold
+      margin-right: 1em
+    a:hover
+      color: gainsboro
+
+
 
   .logo-image-div
     grid-column: col  / span 4
@@ -67,14 +75,11 @@
     display: inline-grid
     align-content: center
 
-  //.panel
-  //  grid-column: col / span 12
-  //  grid-row: row 2
-  //  display: inline-flex
-  //  align-self: center
-  //  margin: 0
-  //  padding: 0
-  //  list-style-type: none
+
+
+
+
+
 
   .mainheader
     width: inherit
@@ -90,6 +95,7 @@
     background-size: cover
     background-position: center
     position: relative
+    margin-bottom: 1em
 
     &::before
       content: ''
@@ -131,38 +137,16 @@
   .menu-item
     wigth: 30%
     background-color: white
-    border: #d4d4d4 dotted thin
+    //border: #d4d4d4 dotted thin
     text-align: center
     justify-content: center
-
+    cursor: pointer
+  .menu-item:hover
+    background-color: darken(white,10%)
+    h3
+      color: red
   .item-img
     width: 100%
-  .slider-div
-      overflow: hidden
-      display: flex
-      height: 9em
-      width: 100%
-      border-bottom: #EDEDED thin solid
-      border-top: #EDEDED thin solid
-      grid-column: col / span 12
-      grid-row: row 5
-  .sld-window
-    width: 90%
-    height: 20em
-    position:  relative
-
-
-  .sld-btns
-    width: 10%
-    background: no-repeat
-    background-position: center
-    background-color: #d4d4d4
-    .sld-btns:hover
-      background-color: darken($light,10%)
-  .left-btn
-
-
-  .right-btn
 
 
   .mainfooter
@@ -173,6 +157,7 @@
     display: grid
     grid-template-columns: repeat(2, 1fr )
     color: #EDEDED
+    margin-bottom: 10em
 
   .contacts
     text-align: center
@@ -184,19 +169,16 @@
     text-align: center
     flex-flow: column
 
-
 #subscr-field
   background-color: lighten($brownDark, 10%)
   border-color: grey
+  color: white
 
 
 #navbar
   display: -webkit-flex
   display: flex
   margin: auto
-
-
-
 #navbar li
   display: inline-flex
   height: 85.99px
@@ -217,3 +199,32 @@
 
 #navbar a:hover
   background-color: darken($light,10%)
+  color: red
+  font-weight: bold
+
+  //.slider-div
+  //    overflow: hidden
+  //    display: flex
+  //    height: 9em
+  //    width: 100%
+  //    border-bottom: #EDEDED thin solid
+  //    border-top: #EDEDED thin solid
+  //    grid-column: col / span 12
+  //    grid-row: row 5
+  //.sld-window
+  //  width: 90%
+  //  height: 20em
+  //  position:  relative
+  //
+  //
+  //.sld-btns
+  //  width: 10%
+  //  background: no-repeat
+  //  background-position: center
+  //  background-color: #d4d4d4
+  //  .sld-btns:hover
+  //    background-color: darken($light,10%)
+  //.left-btn
+  //
+  //
+  //.right-btn
