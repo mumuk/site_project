@@ -1,0 +1,270 @@
+@import "vars"
+
+/* ---------Large Devices, Wide Screens--1199px-max-------- */
+
+@media only screen and (max-width : 1199px)
+  .wrapper
+    width: 100%
+
+
+
+  /*---------Логотип Панель и корзина----1199px-max--------*/
+
+  .logo-image-div
+    grid-column: 1  / 6
+
+  .logo-image
+    height: 6em
+
+  .panel
+    grid-column: 6 / 12
+
+  .cartDiv
+    grid-column: col 12 / span 1
+
+  .cart-thubn
+    height: 2.5em
+
+
+
+  /* -------Medium Devices, Desktops--991px-max------ */
+
+@media only screen and (max-width : 991px)
+  .socials-img
+    height: 3em
+  .socials
+    justify-content: center
+    padding: 0.5em
+  .login
+    justify-content: center
+    a
+      font-size: 2.1em
+      margin-right: 0
+
+
+
+  /*-------Логотип Панель и корзина--991px-max--------*/
+
+  .logo-image-div
+    grid-column: 3 / 8
+    grid-row: row 1
+    display: flex
+    justify-content: flex-end
+    align-items:  center
+
+  .cartDiv
+    grid-column: 9 / 13
+    grid-row: row 1
+    display: flex
+    justify-content: flex-start
+    align-items:  center
+    margin: 0
+
+  .logo-image
+    height: 7em
+
+  .panel
+    grid-column: 1 / 13
+    grid-row: row 2
+    display: flex
+    justify-content: center
+    border-top: solid thin ghostwhite
+
+  #navbar
+    li
+      align-self: stretch
+      height: auto
+      margin: 0 1.3em
+    a
+      align-self: stretch
+
+  .cart-thubn
+    height: 3em
+
+
+
+  /*-------Хеадер  и Спец.Предложения --991px-max--------*/
+
+  .mainheader
+    min-height: 50vh
+  .header-content
+    padding: 0 10px
+
+  .header-left
+    flex-direction: column
+    h1
+      font-size: 1.1em
+      font-family: intro-grid, sans-serif
+      font-weight: bold
+      line-height: 1.5
+      text-align: center
+  .list
+    justify-content: flex-start
+    font-weight: normal
+
+
+  .special-offer
+    font-size: 0.8em
+    a
+      color: white
+      padding: 0.5em
+      text-decoration: none
+      border: solid thin red
+
+
+
+
+/* -----------Tablets--768-max---------- */
+
+@media only screen and (max-width : 767px)
+
+  /*-------Хеадер  и Социалки--768px-max--------*/
+  .mainheader
+    font-size: 20px
+  .socials
+    padding: 0
+  .socials-img
+    height: 3em
+
+  /*---------Сontent --768px-max----------*/
+  .content
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: repeat(2, 350px)
+
+
+
+
+  /* -----------Tablets--650px-max---------- */
+
+@media only screen and (max-width : 650px)
+
+  .first-bar
+    grid-template-columns: 1fr
+    grid-template-rows: 1fr 1fr
+
+  .socials
+    justify-content: center
+    padding: 0
+  .socials-img
+    height: 3.5em
+    align-self: center
+    margin: 1em 0.4em
+  .login
+    a
+      font-size: 2.3em
+
+
+
+  /*---------Логотип Панель, корзина Спец.предлож - 650px-max-----------*/
+
+  .logo-image-div
+    grid-column: 1 / 10
+
+  .cartDiv
+    grid-column: 10 / 13
+
+  .cart-thubn
+    height: 4em
+
+  .special-offer
+    font-size: 0.85em
+    a
+      padding: 0.8em
+
+
+
+  /*-------------Extra Small Devices, Phones ----480px-max---------*/
+
+@media only screen and (max-width : 480px)
+  .socials-img
+    height: 2.5em
+  .login
+    a
+      font-size: 2em
+  .content
+    grid-template-columns: repeat(2, 1fr)
+
+
+
+  /*---------Логотип Панель и корзина - 480px-max-----------*/
+
+  .logo-image-div
+    grid-column: 1 / 10
+  .logo-image
+    height: 4.5em
+
+  .cartDiv
+    grid-column: 10 / 13
+    border-left: solid thin ghostwhite
+    padding-left: 5px
+
+  .panel
+    height: 4.2em
+    padding: 0
+
+  #navbar
+    padding: 0
+    li
+      height: 4.2em
+      margin: 0 0.3em 0 0
+      border-left: solid thin ghostwhite
+    a
+      font-size: 15px
+
+  .cart-thubn
+    height: 2.5em
+
+
+
+  /*-------Хеадер  и Спец.Предложения--480px-max--------*/
+
+  .mainheader
+    min-height: 60vh
+
+  .header-content
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 2fr
+    justify-content: center
+    align-items: center
+    padding: 5px 0 20px 0
+
+  .list
+    margin: 0
+
+  .header-left
+    grid-row: 1
+    text-align: center
+    h1
+      padding: 0
+      margin: 0
+
+  .header-right
+    grid-row: 2
+
+
+
+  /*-------Content--480px-max--------*/
+
+  .content
+    grid-template-columns: 1fr
+    grid-template-rows: 350px
+
+
+
+  /*-------Footer--480px-max--------*/
+
+  .mainfooter
+    margin-top: 10px
+    grid-template-columns: 1fr
+    grid-template-rows: 1fr 1fr
+
+  .subscribe
+    border-top: solid thin lighten($brownDark, 10%)
+    padding-top: 5px
+
+  #subscr-field
+    background-color: lighten($brownDark, 10%)
+    width: 11em
+    border-color: grey
+    color: white
