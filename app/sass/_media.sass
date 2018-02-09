@@ -1,5 +1,7 @@
 @import "vars"
 
+
+
 /* ---------Large Devices, Wide Screens--1199px-max-------- */
 
 @media only screen and (max-width : 1199px)
@@ -25,6 +27,10 @@
   .cart-thubn
     height: 2.5em
 
+  .content
+    grid-template-rows: repeat(3, 350px)
+    grid-row-gap: 50px
+
 
 
   /* -------Medium Devices, Desktops--991px-max------ */
@@ -40,6 +46,9 @@
     a
       font-size: 2.1em
       margin-right: 0
+  .content
+    h3
+      font-size: 170%
 
 
 
@@ -68,7 +77,7 @@
     grid-row: row 2
     display: flex
     justify-content: center
-    border-top: solid thin ghostwhite
+    border-top: solid thin gainsboro
 
   #navbar
     li
@@ -91,9 +100,8 @@
     padding: 0 10px
 
   .header-left
-    flex-direction: column
     h1
-      font-size: 1.1em
+      font-size: 1.4em
       font-family: intro-grid, sans-serif
       font-weight: bold
       line-height: 1.5
@@ -112,26 +120,37 @@
       border: solid thin red
 
 
+  .content
+    grid-template-rows: repeat(3, 300px)
+    grid-row-gap: 4vw
 
 
 /* -----------Tablets--768-max---------- */
 
 @media only screen and (max-width : 767px)
 
-  /*-------Хеадер  и Социалки--768px-max--------*/
+  /*-------Хеадер  и Социалки--767px-max--------*/
   .mainheader
     font-size: 20px
   .socials
     padding: 0
   .socials-img
     height: 3em
+  .header-left
+    h1
+      font-size: 1.1em
 
-  /*---------Сontent --768px-max----------*/
+  /*---------Сontent --767px-max----------*/
   .content
     grid-template-columns: repeat(2, 1fr)
-    grid-template-rows: repeat(2, 350px)
+    grid-template-rows: repeat(2, 300px)
+    grid-row-gap: 6vw
 
+    h3
+      font-size: 250%
 
+    .menu-item
+      margin: 0 12px
 
 
   /* -----------Tablets--650px-max---------- */
@@ -141,6 +160,7 @@
   .first-bar
     grid-template-columns: 1fr
     grid-template-rows: 1fr 1fr
+
 
   .socials
     justify-content: center
@@ -169,9 +189,17 @@
   .special-offer
     font-size: 0.85em
     a
-      padding: 0.8em
+      padding: 0.7em
+      font-size: 3vw
+  .header-left
+    h1
+      font-size: 1em
+    ul
+      font-size: 0.8em
 
-
+  .content
+    grid-template-rows: repeat(3, 300px)
+    grid-row-gap: 5vw
 
   /*-------------Extra Small Devices, Phones ----480px-max---------*/
 
@@ -189,13 +217,13 @@
   /*---------Логотип Панель и корзина - 480px-max-----------*/
 
   .logo-image-div
-    grid-column: 1 / 10
+    grid-column: 1 / 9
   .logo-image
     height: 4.5em
 
   .cartDiv
-    grid-column: 10 / 13
-    border-left: solid thin ghostwhite
+    grid-column: 9 / 13
+    //border-left: solid thin gainsboro
     padding-left: 5px
 
   .panel
@@ -207,7 +235,6 @@
     li
       height: 4.2em
       margin: 0 0.3em 0 0
-      border-left: solid thin ghostwhite
     a
       font-size: 15px
 
@@ -219,7 +246,7 @@
   /*-------Хеадер  и Спец.Предложения--480px-max--------*/
 
   .mainheader
-    min-height: 60vh
+    min-height: 40vh
 
   .header-content
     display: grid
@@ -248,7 +275,16 @@
 
   .content
     grid-template-columns: 1fr
-    grid-template-rows: 350px
+    grid-template-rows: 260px
+    grid-row-gap: 6vw
+    border: none
+    h3
+      font-size: 350%
+
+  .menu-item
+    border: solid thin gainsboro
+    .item-img
+      width: 70%
 
 
 
